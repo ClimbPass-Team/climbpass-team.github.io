@@ -1,0 +1,27 @@
+.italic {
+    font-style: italic;
+    font-weight: 600 !important;
+}
+
+.pseudo-header{
+    font-size: 14px;
+    font-weight: bold;
+    color: #ccc;
+    letter-spacing: 2px;
+    padding-bottom: 0;
+}
+
+.bolder{
+    font-weight: bold
+}
+
+.fullWidth {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.eye-catching{
+    font-size: 24px;
+}
