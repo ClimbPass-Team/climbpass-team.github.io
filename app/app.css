@@ -6,3 +6,8 @@
 .larger-padding{
     padding: 106px 0 75px 0 !important;
 }
+
+.iframe-container{
+    display: flex;
+    justify-content: center;
+}
