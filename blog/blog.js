@@ -8,11 +8,13 @@ $( document ).ready(function(){
     blogArea.textContent = '';
 
     let image = blogTemplate.content.getElementById("blog-image");
+    let link = blogTemplate.content.getElementById("card-link");
     let title = blogTemplate.content.getElementById("blog-title");
     let description = blogTemplate.content.getElementById('blog-description');
 
     // populate data
     blogData.forEach((item, index) => {
+        link.setAttribute('href', item.link);
         image.setAttribute('src', item.src);
         image.setAttribute('alt', item.alt);
         title.innerText = item.title;
