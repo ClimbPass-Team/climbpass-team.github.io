@@ -11,12 +11,12 @@
     })(window,document,'script','dataLayer','GTM-TQJ637J');</script>
     <!-- End Google Tag Manager -->
 
-    <!--Page Title-->
-    <title>ClimbPass Post</title>
+    <!-- Page Title, dynamic for SEO purposes -->
+    <title>{{ post.title }}</title>
 
-    <!--Meta Keywords and Description-->
-    <meta name="keywords" content="ClimbPass {{ overview.tags }}">
-    <meta name="description" content="{{ overview.description }}">
+    <!--Meta Keywords and Description, SEO -->
+    <meta name="keywords" content="ClimbPass {{ post.tags }}">
+    <meta name="description" content="{{ post.description }}">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
 
     <!--Favicon-->
@@ -157,7 +157,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
             
             <figure>
-                <img src="/images/blog-images/placeholder_climb.jpg" />
+                <img src="/images/blog-images/placeholder_climb.jpg" alt="{{ post.image.alt }}" />
                 <figcaption>
                     <div class="article-details">
                         <p>Published: {{ overview.createdOn }}</p>
@@ -183,7 +183,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
         <div class="section image-content">
             <figure>
-                <img src="/images/blog-images/placeholder_climb.jpg" />
+                <img src="/images/blog-images/placeholder_climb.jpg" alt="{{ post.images[0].alt }}" />
                 <figcaption>Caption for this image</figcaption>
             </figure>
         </div>
