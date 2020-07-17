@@ -1,1 +1,1 @@
-var blogData = [{"src": "/images/blog-images/Night-Party-Music-02.jpg", "alt": "party all night", "title": "Test-why-you-should-party", "description": "Summary", "link": "posts/Test-why-you-should-party"}]
+var blogData = [{"src": "/images/blog-images/Night-Party-Music-02.jpg", "alt": "party all night", "title": "Test: why you should party", "description": "Summary", "link": "posts/Test-why-you-should-party"}]
