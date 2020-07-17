@@ -60,7 +60,7 @@ img {
     font-size: smaller;
     font-style: italic;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .flex-view{
