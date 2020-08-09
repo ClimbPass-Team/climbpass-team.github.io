@@ -10,4 +10,10 @@
 .iframe-container{
     display: flex;
     justify-content: center;
+    margin: auto;
+}
+
+.video-item{
+    width: 100%;
+    height: auto;
 }
