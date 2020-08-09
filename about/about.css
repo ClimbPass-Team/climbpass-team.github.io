@@ -29,3 +29,9 @@
 .paddingTop{
     padding: 106px 0 75px 0;
 }
+
+@media only screen and (max-width: 600px) {
+    main {
+        margin-top: 3rem;
+    }
+  }
