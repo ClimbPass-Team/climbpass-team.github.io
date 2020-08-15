@@ -29,7 +29,7 @@
 
     <!-- Custom CSS Files -->
     <link rel="stylesheet" href="../css/custom.css">
-    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./contact.css">
 
     <!-- Namari Color CSS -->
     <link rel="stylesheet" href="../css/namari-color.css">
@@ -172,39 +172,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!--Main Content Area-->
     <main id="content">
-
-        <!--Content Section-->
-        <div id="climbpass-social" class="scrollto clearfix text-center" data-enllax-ratio=".2">
-
-            <!-- POSTS -->
-            <div class="row clearfix larger-padding">
-
-                <div class="section-heading text-center">
-                    <h3 class="">POSTS</h3>
-                    <h2 class="section-title smaller-font">
-                        Note: Aligned with the context of Singapore, the term "Rock Climbing" mostly refers to "Bouldering" or "Top Rope climbing".
+        <div class="contact-form-wrapper">
+            <form id="test-form" class="contact-form">
+                <div class="section-heading text-center full-length-content">
+                    <h2 class="section-title smaller-font full-length-content">
+                        Contact Us
                     </h2>
                 </div>
-            </div>
 
-            <!-- Dynamically Generated Blog Posts -->
-            <div class="row clearfix dynamic-wrap" id="dynamic-blog-cards">
-
-                <div class="col-3">
-                    <div class="card">
-                        <img src="images/placeholder_climb.jpg" alt="Avatar" style="width:100%">
-                        <div class="container">
-                          <h4><b>John Doe</b></h4>
-                          <p>Architect & Engineer</p>
-                        </div>
+                <div class="full-length-content single-field">
+                    <label>Your name *</label>
+                    <div class="space-items">
+                        <input 
+                            class="col-2-with-gap"
+                            type="text" 
+                            name="first_name" 
+                            placeholder="First name" 
+                            required 
+                        />
+                        <input 
+                            class="col-2-with-gap"
+                            type="text" 
+                            name="last_name" 
+                            placeholder="Last name" 
+                            required 
+                        />
                     </div>
+
                 </div>
-
-            </div>
-
+                
+                <div class="full-length-content single-field flex-content">
+                    <label>Email address *</label>
+                    <input type="text" name="email" placeholder="Email Address" />
+                </div>
+    
+                <div class="full-length-content single-field flex-content">
+                    <label>Phone number</label>
+                    <input type="text" name="phone" placeholder="Number" />
+                </div>
+    
+                <div class="full-length-content single-field flex-content">
+                    <label>Message *</label>
+                    <textarea 
+                        rows="4"
+                        cols="50"
+                        type="text" 
+                        name="message" 
+                        placeholder="Message"
+                    ></textarea>
+                </div>
+    
+                <button class="ripple" id="submit-form" type="submit">Submit</button>
+            </form>
         </div>
-        <!--End of Content Section-->
-
+        
          
     </main>
     <!--End Main Content Area-->
@@ -226,8 +247,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <script src="../js/images-loaded.min.js"></script>
 <script src="../js/lightbox.min.js"></script>
 <script src="../js/site.js"></script>
-<script src="./blog.js"></script>
-<script src="./data.js"></script>
+<script>
+    var $form = $('form#test-form'),
+    url = 'https://script.google.com/macros/s/AKfycbwZEITtwDSn-Ru_YWFzVfdDhrDONAt26SgHIGhlIyzvpmT7yik/exec'
+
+    $('#submit-form').on('click', function(e) {
+        e.preventDefault();
+        var jqxhr = $.ajax({
+            url: url,
+            method: "GET",
+            dataType: "json",
+            data: $form.serialize()
+        }).success(() => {
+                // notify user
+                document.getElementById("test-form").reset();
+                alert("Feedback Submitted!")
+            }
+        );
+    })
+</script>
 
 
 
