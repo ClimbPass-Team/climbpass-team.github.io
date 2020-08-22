@@ -1,3 +1,8 @@
 .gallery-photo > a{
     margin: 10px 0;
 }
+
+.center-flex{
+    display: flex;
+    justify-content: center;
+}
