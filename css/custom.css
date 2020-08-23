@@ -6,3 +6,23 @@
     display: flex;
     justify-content: center;
 }
+
+.reverse-flex {
+    flex-wrap: wrap-reverse;
+}
+
+.text-large{
+    font-size: 1.125rem;
+}
+
+.font-medium{
+    font-weight: bold;
+}
+
+.top-margin{
+    margin-top: 1rem;
+}
+
+.list-tile{
+    margin: 2rem 1rem 0 0;
+}
