@@ -29,5 +29,5 @@
 }
 
 .sized-img{
-    height: 40rem;
+    height: 40rem !important;
 }
