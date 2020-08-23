@@ -28,6 +28,6 @@
     margin: 2rem 1rem 0 0;
 }
 
-main > img{
-    height: 40rem !important;
+.sized-img{
+    height: 40rem;
 }
