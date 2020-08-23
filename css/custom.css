@@ -2,6 +2,10 @@
     margin: 10px 0;
 }
 
+main{
+    margin-bottom: 1rem;
+}
+
 .center-flex{
     display: flex;
     justify-content: center;
