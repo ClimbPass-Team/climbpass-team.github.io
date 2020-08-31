@@ -1,3 +1,33 @@
 .gallery-photo > a{
     margin: 10px 0;
 }
+
+main{
+    margin-bottom: 1rem;
+}
+
+.center-flex{
+    display: flex;
+    justify-content: center;
+}
+
+.reverse-flex {
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+
+.text-large{
+    font-size: 1.125rem;
+}
+
+.font-medium{
+    font-weight: bold;
+}
+
+.list-tile{
+    margin: 2rem 1rem 0 0;
+}
+
+.sized-img{
+    height: 40rem !important;
+}
