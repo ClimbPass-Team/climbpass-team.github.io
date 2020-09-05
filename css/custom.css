@@ -32,6 +32,10 @@ main{
     height: 40rem !important;
 }
 
+.smaller-sized-img{
+    height: 20rem !important;
+}
+
 .purple{
-    color: #8D7EAE;
+    color: #8D7EAE !important;
 }
