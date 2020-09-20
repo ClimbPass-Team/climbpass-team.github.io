@@ -29,7 +29,7 @@ main{
 }
 
 .sized-img{
-    height: 40rem !important;
+    max-height: 40rem !important;
 }
 
 .smaller-sized-img{
