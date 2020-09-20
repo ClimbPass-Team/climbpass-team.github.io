@@ -16,6 +16,17 @@ main{
     flex-wrap: wrap-reverse;
 }
 
+.flexed {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.smaller-margins {
+    margin: 5px 0 !important;
+}
+
 .text-large{
     font-size: 1.125rem;
 }
