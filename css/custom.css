@@ -28,8 +28,8 @@ main{
     justify-content: flex-start;
 }
 
-.half{
-    width: 50%;
+.no-pad{
+    padding: 0 !important;
 }
 
 .smaller-margins {
