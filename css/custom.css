@@ -16,6 +16,11 @@ main{
     flex-wrap: wrap-reverse;
 }
 
+.wrap-flexed{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .flexed {
     display: flex;
     flex-flow: column;
@@ -50,24 +55,3 @@ main{
 .purple{
     color: #8D7EAE !important;
 }
-
-/* .hide-overflow{
-    overflow: hidden;
-}
-
-.relative-position{
-    position: relative;
-}
-
-.left-crop{
-    left: -50%;
-}
-
-.right-crop{
-    right: -50%;
-}
-
-.flex-wrap{
-    display: flex;
-    flex-wrap: wrap;
-} */
