@@ -28,6 +28,10 @@ main{
     justify-content: flex-start;
 }
 
+.half{
+    width: 50%;
+}
+
 .smaller-margins {
     margin: 5px 0 !important;
 }
