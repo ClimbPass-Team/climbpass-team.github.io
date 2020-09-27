@@ -16,7 +16,7 @@ main{
     flex-wrap: wrap-reverse;
 }
 
-.wrap-flexed{
+.flex-wrap{
     display: flex;
     flex-wrap: wrap;
 }
